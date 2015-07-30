@@ -1,0 +1,332 @@
+---
+:custom_buttons_sets:
+- name: VMware Tasks|Vm|
+  description: VMware Tasks
+  set_type: CustomButtonSet
+  read_only: 
+  mode: 
+  custom_buttons:
+  - description: PromoteVM_To_Template
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 6
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: PromoteVM_To_Template
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_PromoteVM_To_Template
+      dialog_label: VMware - MarkVMAsVirtualMachine
+  - description: Change HotAddEnabled
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 3
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Change HotAddEnabled
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_ReconfigVM_HotAddEnabled
+      dialog_label: VMware - ReconfigVM_HotAddEnabled
+  - description: 'Change GuestId '
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 2
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: 'Change GuestId '
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_ReconfigVM_GuestId
+      dialog_label: VMware - ReconfigVM_GuestId
+  - description: vMotion VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 12
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: vMotion VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: RelocateVM_Task
+      dialog_label: VMware - vMotion
+  - description: Mark VM As Template
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 13
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Mark VM As Template
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_MarkVMAsTemplate
+  - description: Mount Tools Installer
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 9
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Mount Tools Installer
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_MountToolsInstaller
+  - description: UnMount Tools Installer
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 9
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: UnMount Tools Installer
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_UnMountToolsInstaller
+      dialog_label: VMware - MarkVMAsVirtualMachine
+  - description: Rename VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 13
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Rename VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_ReconfigVM_Rename
+      dialog_label: VMware - RenameVM
+  - description: ResizeDisk
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 7
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: ResizeDisk
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_ReconfigVM_ResizeDisk
+      dialog_label: VMware - ResizeDisk
+  - description: AddRAM_to_VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 6
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: AddRAM_to_VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_AddRAM_to_VM
+      dialog_label: VMware - AddRAM_to_VM
+  - description: AddDisk_to_VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 5
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: AddDisk_to_VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_AddDisk_to_VM
+      dialog_label: VMware - AddDisk_to_VM
+  - description: Right Size VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 4
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Right Size VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: right_size_vm
+  - description: Flex VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 4
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: Flex VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: flex_processing
+      dialog_label: Button - VM - Flex Reason
+  - description: AddCPU_to_VM
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 3
+      :display: true
+    userid: cloudadmin@example.org
+    wait_for_complete: 
+    name: AddCPU_to_VM
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: create
+      ae_attributes:
+        request: vmware_AddCPU_to_VM
+      dialog_label: VMware - AddCPU_to_VM
+  set_data:
+    :button_order:
+    - AddCPU_to_VM
+    - Flex VM
+    - Right Size VM
+    - AddDisk_to_VM
+    - AddRAM_to_VM
+    - ResizeDisk
+    - Rename VM
+    - UnMount Tools Installer
+    - Mount Tools Installer
+    - Mark VM As Template
+    - vMotion VM
+    - 'Change GuestId '
+    - Change HotAddEnabled
+    - PromoteVM_To_Template
+    :button_image: 2
+    :display: true
+    :group_index: 2
