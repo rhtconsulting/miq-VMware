@@ -1,0 +1,81 @@
+---
+- description: 
+  buttons: submit,cancel
+  label: VMware - vMotion
+  dialog_tabs:
+  - description: 
+    display: edit
+    label: VMware - vMotion
+    display_method: 
+    display_method_options: 
+    position: 0
+    dialog_groups:
+    - description: 
+      display: edit
+      label: Target Information
+      display_method: 
+      display_method_options: 
+      position: 0
+      dialog_fields:
+      - name: resource_pool_ems_ref
+        description: "/ Integration / VMware / DynamicDropDowns / List_Resource_Pools"
+        type: DialogFieldDropDownList
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :load_values_on_init: true
+          :show_refresh_button: true
+        label: Resource Pool
+        position: 0
+        validator_type: 
+        validator_rule: 
+        reconfigurable: false
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action_fqname: ''
+      - name: datastore_ems_ref
+        description: "/ Integration / VMware / DynamicDropDowns / List_Datastores"
+        type: DialogFieldDropDownList
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: 
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :load_values_on_init: true
+          :show_refresh_button: true
+        label: Datastore
+        position: 1
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: true
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: 
+        auto_refresh: 
+        trigger_auto_refresh: 
+        resource_action_fqname: ''
