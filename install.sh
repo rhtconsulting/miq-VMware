@@ -12,7 +12,10 @@ install_cmd() {
     bin/rake rhconsulting:dialogs:import[${TOPDIR}/ServiceDialogs]
  
     echo "Importing Buttons"
-    bin/rake rhconsulting:buttons:import[${TOPDIR}/Buttons/buttons.yml]
+    bin/rake rhconsulting:buttons:import[${TOPDIR}/Buttons/buttons2.yml]
+
+    echo "Importing Buttons"
+    bin/rake rhconsulting:buttons:import[${TOPDIR}/Buttons/buttons1.yml]
 }
 
 if [ -d ${TOPDIR}/Automate/${DOMAIN} ] ; then
