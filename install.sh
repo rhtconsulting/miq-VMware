@@ -9,7 +9,7 @@ install_cmd() {
     bin/rake "rhconsulting:miq_ae_datastore:import[${DOMAIN}, ${TOPDIR}/Automate]"
 
     echo "Importing Service Dialogs"
-    bin/rake rhconsulting:dialogs:import[${TOPDIR}/ServiceDialogs]
+    bin/rake rhconsulting:service_dialogs:import[${TOPDIR}/ServiceDialogs]
  
     echo "Importing Buttons"
     bin/rake rhconsulting:buttons:import[${TOPDIR}/Buttons/buttons.yml]
